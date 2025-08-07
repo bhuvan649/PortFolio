@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
@@ -11,17 +11,27 @@ import TargetCursor from "./components/TargetCursor";
 
 import ProjectDetails from "./pages/ProjectDetails";
 
-const HomePage = () => (
-  <>
-    <TargetCursor spinDuration={7} hideDefaultCursor={true} />
-    <Navbar />
-    <Hero />
-    <About />
-    <Projects />
-    <Certifications />
-    <Footer />
-  </>
-);
+// HomePage with optional TargetCursor
+const HomePage = () => {
+  const [showCursor, setShowCursor] = useState(false);
+
+  useEffect(() => {
+    const hasMouse = window.matchMedia("(pointer: fine)").matches;
+    setShowCursor(hasMouse);
+  }, []);
+
+  return (
+    <>
+      {showCursor && <TargetCursor spinDuration={7} hideDefaultCursor={true} />}
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects />
+      <Certifications />
+      <Footer />
+    </>
+  );
+};
 
 const App = () => {
   return (
