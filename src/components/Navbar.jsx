@@ -9,9 +9,15 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-background shadow-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center text-text">
-        <h1 className="cursor-target text-2xl font-bold text-accent font-poppins cursor-pointer" onClick={() => window.location.reload()}>
-          Bhuvanesh
-        </h1>
+<h1
+  className="cursor-target text-2xl font-bold font-poppins cursor-pointer flex items-center gap-2"
+  onClick={() => window.location.reload()}
+>
+  <span className="text-accent text-4xl">&lt;/&gt;</span>
+  <span className="text-white">Bhuvanesh</span>
+</h1>
+
+
 
         <div className="hidden md:flex gap-6 text-lg font-medium">
           {navLinks.map((link) => (
