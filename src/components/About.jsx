@@ -58,7 +58,7 @@ const About = () => {
               <li>• Problem Solving</li>
             </ul>
             <span className="text-purple-400 mt-4">~$ </span><span>currently --working-on</span>
-            <p className="text-yellow-400">Building intelligent systems with AI</p>
+            <p className="text-yellow-400">An Ai meeting summarizer</p>
             <p className="text-purple-400">~$ |</p>
           </div>
         </div>
