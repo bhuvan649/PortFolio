@@ -34,13 +34,10 @@ const Footer = () => {
                 vasulebhuvanesh@gmail.com
               </a>
             </div>
-            <div className="flex items-center gap-2 mb-2">
-              <FaPhone className="text-[#FF44EC]" />
-              <span>+91 9063917425</span>
-            </div>
+
             <div className="flex items-center gap-2">
               <FaMapMarkerAlt className="text-[#FF44EC]" />
-              <span>Shirpur Maharashtra, India</span>
+              <span>Maharashtra, India</span>
             </div>
           </div>
 
