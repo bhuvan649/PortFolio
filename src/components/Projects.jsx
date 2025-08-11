@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link for internal routing
-import { Blogging, SnapEats,PizzaStation } from "../assets";
+import { Blogging, SnapEats,PizzaStation,MusicCourse } from "../assets";
 
 const projects = [
   {
@@ -25,6 +25,16 @@ const projects = [
   },
   {
     id: 2,
+    title: "Music Courses Platform",
+    description:
+      "Developed a responsive course platform with interactive 3D cards and individual course pages powered by JSON data. Optimized UI/UX with smooth layouts, hidden scrollbars, and mobile responsiveness.",
+    image: MusicCourse,
+    github: "https://github.com/bhuvan649/MusicCourses.git",
+    demo: "https://your-demo-link.com/project3",
+    techStack: ["Next.js", "Tailwind CSS", "JSON Data"],
+  },
+  {
+    id: 3,
     title: "PizzaStation",
     description:
       "A fully functional pizza ordering website built using React.js and Tailwind CSS, backed by a JSON server for product data and cart operations.",
@@ -33,6 +43,7 @@ const projects = [
     demo: "https://your-demo-link.com/project3",
     techStack: ["React.js", "CSS"],
   },
+  
 ];
 
 const Projects = () => {
