@@ -1,10 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link for internal routing
-import { Blogging, SnapEats,PizzaStation,MusicCourse } from "../assets";
+import { Blogging, SnapEats,PizzaStation,MusicCourse,RandomFeedback } from "../assets";
 
 const projects = [
   {
     id: 0,
+    title: "RandomFeedback",
+    description:
+      "RandomFeedback - Collect anonymous, honest feedback with secure authentication and personalized controls.",
+    image: RandomFeedback,
+    github: "https://github.com/bhuvan649/RandomFeedback.git",
+    demo: "https://your-demo-link.com/project1",
+    techStack: ["Next.js", "MongoDB", "Next-Auth", "Resend", "OpenAI API", "Tailwind CSS"],
+  },
+  {
+    id: 1,
     title: "Blogging-Hub",
     description:
       "A blog app built with React.js and Appwrite, featuring user authentication, post CRUD operations, and global state management using Redux.",
@@ -14,7 +24,7 @@ const projects = [
     techStack: ["React.js", "Appwrite", "Redux", "Tailwind CSS"],
   },
   {
-    id: 1,
+    id: 2,
     title: "SnapEats",
     description:
       "A responsive food ordering UI built with React and Vite, enabling users to browse food categories and view item details — ideal for online food delivery platforms.",
@@ -24,7 +34,7 @@ const projects = [
     techStack: ["React.js", "CSS"],
   },
   {
-    id: 2,
+    id: 3,
     title: "Music Courses Platform",
     description:
       "Developed a responsive course platform with interactive 3D cards and individual course pages powered by JSON data. Optimized UI/UX with smooth layouts, hidden scrollbars, and mobile responsiveness.",
@@ -34,7 +44,7 @@ const projects = [
     techStack: ["Next.js", "Tailwind CSS", "JSON Data"],
   },
   {
-    id: 3,
+    id: 4,
     title: "PizzaStation",
     description:
       "A fully functional pizza ordering website built using React.js and Tailwind CSS, backed by a JSON server for product data and cart operations.",

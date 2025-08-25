@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import { FaArrowRight, FaMapMarkerAlt } from "react-icons/fa";
 import Folder from "./Folder";
-import {SnapEats,Blogging,MusicCourse }from '../assets'
+import {SnapEats,Blogging,MusicCourse,RandomFeedback }from '../assets'
 const Hero = () => {
   return (
     <section
@@ -61,8 +61,9 @@ const Hero = () => {
             <Folder size={2} color="#CA52CA" className="cursor-target custom-folder" 
               items={[
     <img src={MusicCourse}  className="w-full h-full object-cover rounded-[10px]" />,
-    <img src={Blogging}  className="w-full h-full object-cover rounded-[10px]" />,
+    <img src={RandomFeedback}  className="w-full h-full object-cover rounded-[10px]" />,
     <img src={SnapEats}  className="w-full h-full object-cover rounded-[10px]" />,
+
   ]}/>
           </div>
         </div>

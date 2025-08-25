@@ -1,8 +1,15 @@
 import { useParams, Link } from 'react-router-dom';
-import { SnapEats,Blogging,Todo,PizzaStation } from '../assets';
+import { SnapEats,Blogging,Todo,PizzaStation,RandomFeedback } from '../assets';
 const dummyProjects = [
   {
     id: '0',
+    title: 'Random Feedback',
+    description: 'Collect anonymous, honest feedback with secure authentication and personalized controls.',
+    image: RandomFeedback,
+    details: 'Developed a full-stack web application that allows registered users to receive anonymous feedback through unique shareable URLs. Implemented secure authentication and email verification using Next-Auth and Resend to ensure account safety. Integrated the OpenAI API to generate suggested feedback messages and enhance user experience. Built user-friendly controls for managing, reviewing, and organizing received feedback.',
+  },
+  {
+    id: '1',
     title: 'Blogging-Hub',
     description: 'A blog app built with React.js and Appwrite, featuring user authentication, post CRUD operations, and global state management using Redux.',
     image: Blogging,
